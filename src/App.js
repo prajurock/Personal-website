@@ -1,7 +1,9 @@
 import './App.css';
+import './static/css/main.scss'
 
 import { Route, BrowserRouter as Router } from "react-router-dom";
 
+import Index from './pages/Index';
 import React from 'react'
 
 function App() {
@@ -9,7 +11,7 @@ function App() {
     <Router>
     <div>
       <Route exact path="/">
-        <h1>hh</h1>
+        <Index/>
       </Route>
       <Route path="/news">
         <h1>pp</h1>
