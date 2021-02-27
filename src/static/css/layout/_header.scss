@@ -138,44 +138,13 @@
 			}
 		}
 
-		form {
-			margin: 0;
-
-			input {
-				display: inline-block;
-				height: 2.5em;
-				position: relative;
-				top: -2px;
-				vertical-align: middle;
-			}
+	@include breakpoint(medium) {
+		.links {
+			display: none;
 		}
+	}
 
-		#search {
-			@include vendor('transition', 'all 0.5s ease');
-			max-width: 0;
-			opacity: 0;
-			overflow: hidden;
-			padding: 0;
-			white-space: nowrap;
-
-			input {
-				width: 12em;
-			}
-
-			&.visible {
-				max-width: 12.5em;
-				opacity: 1;
-				padding: 0 0.5em 0 0;
-			}
-		}
-
-			@include breakpoint('medium') {
-				.links {
-					display: none;
-				}
-			}
-
-		@include breakpoint('small') {
+		@include breakpoint(small) {
 			height: 2.75em;
 			line-height: 2.75em;
 
