@@ -9,15 +9,15 @@ import React from 'react'
 function App() {
   return (
     <Router>
-    <div>
-      <Route exact path="/">
-        <Index/>
-      </Route>
-      <Route path="/news">
-        <h1>pp</h1>
-      </Route>
-    </div>
-  </Router>
+      <div>
+        <Route exact path="/">
+          <Index />
+        </Route>
+        <Route path="/news">
+          <h1>pp</h1>
+        </Route>
+      </div>
+    </Router>
   );
 }
 
